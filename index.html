@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img src="./pictures/Rose-Company-Logo-Vector-Graphics-3336276-1-1-580x386.png" alt="Your logo here" id="company-logo">
+        <div class="header-text">
+            <h1>Your Company Survey Form</h1>
+            <h2>We work for you, thanks for helping us improve our service.</h2>
+        </div>
+    </header>
+    <form action="#" id="form-content">
+        <div>
+            <label for="name" class="question">Name <br><input type="text" name="form" id="name" class="text-input" placeholder="Enter your name" !required></label><br>
+        </div>
+        <div>
+            <label for="email" class="question">Email <br><input type="email" name="form" id="email" class="text-input" placeholder="Enter your email" !required></label><br>
+        </div>
+        <div>
+            <label for="age" class="question">Age <br><input type="number" name="form" id="age" min="10" max="99" placeholder="Select your age" class="text-input" !required></label><br>
+        </div>
+        <div>
+            <label for="service" class="question">How long have you been using the product?<br></label>
+                <p class="answer"><input type="radio" name="service-c" id="one-month" value="one-month" checked>   One Month</p> 
+                <p class="answer"><input type="radio" name="service-c" id="three-months" value="three-months">  Three Months</p>
+                <p class="answer"><input type="radio" name="service-c" id="six-months" value="six-months">  Six Months</p>
+                <p class="answer"><input type="radio" name="service-c" id="a-year" value="a-year">  One Year</p>
+        </div>
+        <div>
+            <label for="features" class="question">Which product features do you like the most?<br></label>
+                <p class="answer"><input type="checkbox" name="features-c" id="price" value="price">  Price</p>
+                <p class="answer"><input type="checkbox" name="features-c" id="quality" value="quality">  Quality</p>
+                <p class="answer"><input type="checkbox" name="features-c" id="quantity" value="quantity">  Quantity</p>
+                <p class="answer"><input type="checkbox" name="features-c" id="brand" value="brand" checked>  Brand</p>
+                <p class="answer"><input type="checkbox" name="features-c" id="other-feature" value="other-feature">  Other   <input type="text" name="features-c"   id="other-feature-a" placeholder="Other feature" class="text-input"></p><br>
+        </div>
+        <div>
+            <label for="favorite" class="question">Which is your favorite product?<br></label>
+                <select name="favoriteProduct" id="choose-product" class="text-input">
+                    <option disabled selected value="">Select an option</option>
+                    <option value="product-a">Product A</option>
+                    <option value="product-b">Product B</option>
+                    <option value="product-c">Product C</option>
+                </select>
+            <br>
+        </div>
+        <div>
+            <label for="shop-pref" class="question">Where do you preffer to buy our articles?<br></label>
+                <p class="answer"><input type="radio" name="shop-pref-a" id="shops" value="shops">  Our shops</p>
+                <p class="answer"><input type="radio" name="shop-pref-a" id="amazon" value="amazon">  Amazon</p>
+                <p class="answer"><input type="radio" name="shop-pref-a" id="walmart" value="walmart">  Walmart</p>
+                <p class="answer"><input type="radio" name="shop-pref-a" id="website" value="website" checked>  Our Website</p>
+        </div>
+        <div>
+            <label for="improve" class="question">What would you improve on our product?<br></label>
+                <p class="answer"><input type="checkbox" name="improve-c" id="package">Our package</p>
+                <p class="answer"><input type="checkbox" name="improve-c" id="image" checked>Our image</p>
+                <p class="answer"><input type="checkbox" name="improve-c" id="sustainability">Being more Eco-friendly</p>
+                <p class="answer"><input type="checkbox" name="improve-c" id="other-improvement">Other  <input type="text" name="improve-c"     id="other-improvement-a" placeholder="Other improvement" class="text-input"></p>
+        </div>
+        <div>
+            <p class="question">We are pleaced to know your opinion?</p>
+            <textarea name="opinion" id="opinion-area" cols="66" rows="10" placeholder="Tell us more about your experince with our product"></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit-button">Submit</button>
+        </div>
+        <p>&copy; Written and coded by C0d3F3rn4nd0</p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(100, 100, 255, .3), rgba(100, 100, 255, .3)), url(./pictures/background-picture.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+header {
+    display: flex;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    background: rgb(140, 140, 255);
+    color: rgb(50, 50, 255);
+}
+#company-logo{
+    box-sizing: border-box;
+    float: left;
+    height: 100px;
+    width: auto;
+    margin-left: 5rem;
+    padding: 0;
+}
+.header-text{
+    line-height: 3rem;
+    margin-left: 2rem;
+}
+#form-content {
+    background: rgba(140, 140, 255, 0.7) ;
+    padding: 0 1rem;
+    margin: 0 18rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+.question {
+    font-weight: bold;
+    color: rgb(10, 10, 255);
+}
+.answer {
+    color: rgb(10, 50, 250);
+}
+.text-input {
+    width: 100%;
+}
+#submit-button {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: rgb(250, 250, 255);
+    background-color: rgba(10, 100, 255, 1);
+    line-height: 1.8rem;
+}
